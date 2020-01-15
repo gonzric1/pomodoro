@@ -4,22 +4,30 @@
     <title></title>
     <script src="pomodoro.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins&display=swap" rel="stylesheet">
 </head>
-<main>
-    <h1 class="title">Pomodoro</h1>
-    <div class="timer">
-        <h1 id="clock" class="timer--large"> </h1>
-    </div>
-    <div class="buttons_block">
-        <button class="button--big" onclick=setTimer(25)>25m Timer</button>
-        <button class="button--big" onclick=setTimer(10)>10m Timer</button>
-        <button class="button--big" onclick=setTimer(5)>5m timer</button>
-    </div>
-    <div class="buttons-block">
-        <button class="button--medium" onclick=startTimer()>Start Timer</button>
-        <button class="button--medium" onclick=pauseTimer()>Pause Timer</button>
-        <button class="button--medium" onclick=resetTimer()>Reset Timer</button>
-    </div>
-</main>
+
+<body>
+    <main>
+        <audio id="alarmSound">
+            <source src="beep.mp3" type="audio/mpeg">
+        </audio>
+        <h1 class="title">Pomodoro</h1>
+
+        <div class="buttons_block">
+            <button class="button--big" onclick=setTimer(25)>Pomodoro</button>
+            <button class="button--big" onclick=setTimer(5)>Short Break</button>
+            <button class="button--big" onclick=setTimer(10)>Long Break</button>
+        </div>
+        <div class="timer">
+            <h1 id="clock" class="timer--large"> </h1>
+        </div>
+        <div class="buttons-block">
+            <button class="button--medium button--green" onclick=startTimer()>&#9658;</button>
+            <button class="button--medium" onclick=pauseTimer()>&#10074;&#10074;</button>
+            <!--<button class="button--medium reset" onclick=playAudio()>Reset Timer</button> -->
+        </div>
+    </main>
+</body>
 
 </html>

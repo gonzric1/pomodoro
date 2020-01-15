@@ -1,36 +1,48 @@
-body {
-    background-color: white;
-}
-
-main {
-    margin: 20px 50px;
-    text-align: center;
-}
-
-.title {
-    margin: auto;
-    text-align: center;
-}
-
-.buttons-block {
-    padding: 2em;
-}
-
-.button--big {
-    margin-right: 1em;
-    padding: 1em;
-    font-size: 1.5em;
-    background-color: red;
-}
-
-.button--medium {
-    margin-right: 1em;
-    padding: 0.5em;
-    font-size: 1.5em;
-    background-color: lightblue;
-}
-
-.timer--large {
-    font-size: 5em;
-    text-align: center;
-}
+    body {
+        background-color: #C6D5D2;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    main {
+        margin: 20px 50px;
+        text-align: center;
+    }
+    
+    .button--green {
+        background-color: green;
+        color: white;
+    }
+    
+    .title {
+        margin: auto;
+        text-align: center;
+        padding-bottom: 1em;
+        padding-top: 1.5em;
+        font-size: 2em;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .buttons-block {
+        padding: 1em;
+    }
+    
+    .button--big {
+        margin-right: 1em;
+        padding: .5em 1em;
+        font-size: 1.2em;
+        background-color: #F29727;
+        color: #232323;
+    }
+    
+    .button--medium {
+        margin-right: 1em;
+        padding: 0.5em;
+        font-size: 1.5em;
+    }
+    
+    .timer--large {
+        font-size: 7em;
+        text-align: center;
+        margin-bottom: .25em;
+        color: #2B2B2B;
+    }

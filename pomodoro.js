@@ -1,11 +1,6 @@
 var timeLeft;
 var ticking = false;
 
-function init() {
-    setTimer(25);
-    updateTime();
-}
-
 function pauseTimer() {
     ticking = false;
 }
@@ -17,6 +12,9 @@ function startTimer() {
             if (ticking && timeLeft > 0) {
                 timeLeft -= 1000;
                 updateTime();
+            } else if (ticking && timeLeft <= 0) {
+                playAudio();
+                clearInterval(countdown);
             } else {
                 clearInterval(countdown);
             }
@@ -39,6 +37,12 @@ function setTimer(time) {
     updateTime();
 }
 
+function playAudio() {
+    let alarm = document.getElementById("alarmSound");
+    alarm.play();
+}
+
 window.onload = () => {
-    init()
+    setTimer(25);
+    updateTime();
 };
