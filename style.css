@@ -1,0 +1,36 @@
+body {
+    background-color: white;
+}
+
+main {
+    margin: 20px 50px;
+    text-align: center;
+}
+
+.title {
+    margin: auto;
+    text-align: center;
+}
+
+.buttons-block {
+    padding: 2em;
+}
+
+.button--big {
+    margin-right: 1em;
+    padding: 1em;
+    font-size: 1.5em;
+    background-color: red;
+}
+
+.button--medium {
+    margin-right: 1em;
+    padding: 0.5em;
+    font-size: 1.5em;
+    background-color: lightblue;
+}
+
+.timer--large {
+    font-size: 5em;
+    text-align: center;
+}
