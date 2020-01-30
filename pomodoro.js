@@ -1,5 +1,5 @@
-var timeLeft;
-var ticking = false;
+let timeLeft;
+let ticking = false;
 
 function pauseTimer() {
     ticking = false;
@@ -25,10 +25,9 @@ function startTimer() {
 function updateTime() {
     let minutes = Math.floor(timeLeft / 60000);
     let seconds = Math.floor((timeLeft % 60000) / 1000);
-    var el = document.getElementById('clock')
+    let el = document.getElementById('clock')
     let t = String(minutes) + ":" + String(seconds).padStart(2, '0');
-    el.innerHTML = t;
-    document.title = t;
+    el.innerHTML = document.title = t;
 }
 
 function setTimer(time) {

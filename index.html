@@ -12,15 +12,16 @@
         <audio id="alarmSound">
             <source src="beep.mp3" type="audio/mpeg">
         </audio>
-        <h1 class="title">Pomodoro</h1>
-
-        <div class="buttons_block">
-            <button class="button--big" onclick=setTimer(25)>Pomodoro</button>
-            <button class="button--big" onclick=setTimer(5)>Short Break</button>
-            <button class="button--big" onclick=setTimer(10)>Long Break</button>
+        <div class="title--bar">
+            <img src="184540.svg" height="150">
         </div>
         <div class="timer">
             <h1 id="clock" class="timer--large"> </h1>
+        </div>
+        <div class="buttons_block">
+            <div class="button--big" onclick=setTimer(25)>Pomodoro</div>
+            <div class="button--big" onclick=setTimer(5)>Short Break</div>
+            <div class="button--big" onclick=setTimer(10)>Long Break</div>
         </div>
         <div class="buttons-block">
             <button class="button--medium button--green" onclick=startTimer()>&#9658;</button>
